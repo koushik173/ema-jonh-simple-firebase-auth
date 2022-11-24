@@ -1,11 +1,12 @@
+.header{
+    position: sticky;
+}
 .header nav{
     display: flex;
     background-color: rgb(38, 43, 75) ;
     height: 80px;
     align-items: center;
     justify-content:space-around;
-    
-
 }
 .header a{
     color: white;

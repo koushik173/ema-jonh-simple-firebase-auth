@@ -46,3 +46,14 @@
 .btn-cart:hover{
     background-color: rgb(247, 190, 115);
 }
+@media only screen and (max-width: 950px) {
+    .product{
+        width: 200px;
+        height: 410px;
+        font-size: small;
+    }
+    .product img{
+        width: 186px;
+        height: 150px;
+    }
+}

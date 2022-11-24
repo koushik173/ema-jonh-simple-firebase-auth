@@ -1,0 +1,49 @@
+.reviewContainer{
+    
+    display: flex;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    width: 571px;
+    overflow: hidden;
+    align-items: center;
+    margin: 21px 24%;
+
+}
+.reviewContainer img{
+    width: 91px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.reviewDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.productItemName p{
+    margin: 0px;
+}
+.deleteIcon{
+    color: rgb(218, 76, 76);
+    font-size: 25px;
+}
+.delBtn{
+    display: flex;
+    align-items: center;
+    
+}
+.delBtn button{
+    background: rgb(240, 207, 207);
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+    
+    .reviewContainer{
+        margin: 2px 1%;
+        width: 400px;
+    }
+  }

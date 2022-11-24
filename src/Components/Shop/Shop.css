@@ -13,3 +13,15 @@
 .cartContainer{
     background-color: antiquewhite;
 }
+@media only screen and (max-width: 950px) {
+    .shopContainer{
+        grid-template-columns: 2fr 1fr;
+        
+    }
+    .productContainer{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px; 
+        margin: 10px 10px;
+
+    }
+}

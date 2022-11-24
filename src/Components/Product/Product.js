@@ -10,7 +10,7 @@ const Product = (props) => {
         <div className='product'>
            <img src={img} alt="" />
           <div className='productInfo'>
-            <p className='productName'>{name}</p>
+            <p className='productName'>{name.length >20? name.slice(0,20)+'..':name}</p>
             <p><b>Price: ${price}</b></p><br />
             <p><small>Seller: {seller}</small></p>
             <p><small>Rating: {ratings}</small></p>
