@@ -1,21 +1,20 @@
-.header{
-    position: sticky;
-}
+
 .header nav{
     display: flex;
     background-color: rgb(38, 43, 75) ;
     height: 80px;
     align-items: center;
     justify-content:space-around;
+    position: sticky;
 }
 .header a{
-    color: white;
+    color: rgb(250, 249, 249);
     margin-left: 20px;
     text-decoration:none;
     font-size: 17px;
 }
 .header a:hover{
     color: rgb(230, 163, 76);
-    
-    font-size: 25px;
+    font-size: 20px;
+    transition: 0.3s;
 }
