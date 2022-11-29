@@ -5,6 +5,10 @@ import Product from '../Product/Product';
 import './Shop.css'
 import useProduct from '../../hooks/useProduct';
 import { Link } from 'react-router-dom';
+import { createContext } from 'react';
+
+export const RingContext = createContext('diamond')
+
 
 const Shop = () => {
     const [product,setProduct] = useProduct();
@@ -43,26 +47,28 @@ const Shop = () => {
 
 
     return (
-        <div className='shopContainer'>
-            <div className='productContainer'>
-                {
-                    product.map(pd=><Product
-                        product={pd}
-                        key={pd.id}
-                        handleAddtoCart={handleAddtoCart}>
-                        </Product>)
-                }
+        <RingContext.Provider value='alur ring'>
+                <div className='shopContainer'>
+                <div className='productContainer'>
+                    {
+                        product.map(pd=><Product
+                            product={pd}
+                            key={pd.id}
+                            handleAddtoCart={handleAddtoCart}>
+                            </Product>)
+                    }
 
+                </div>
+                <div className='cartContainer' >
+                    <Cart cart={cart}> 
+                    <Link to="/order">
+                    <button>Review Order</button>
+                    </Link>
+                    </Cart>
+                    
+                </div>
             </div>
-            <div className='cartContainer' >
-                <Cart cart={cart}> 
-                   <Link to="/order">
-                   <button>Review Order</button>
-                   </Link>
-                </Cart>
-                
-            </div>
-        </div>
+        </RingContext.Provider>
     );
 };
 

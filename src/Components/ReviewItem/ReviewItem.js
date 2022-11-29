@@ -1,10 +1,13 @@
 import { faCircle, faMinus, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import { React,useContext } from 'react';
+import { RingContext } from '../Shop/Shop';
 import './ReviewItem.css'
 const ReviewItem = (props) => {
     const {product,handleRemoveProduct} = props;
     const {name,img,price, shipping, quantity} = product;
+    const ring = useContext( RingContext)
+    console.log(ring);
     return (
         <div className='reviewContainer'>
             <div>
