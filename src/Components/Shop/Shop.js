@@ -5,9 +5,9 @@ import Product from '../Product/Product';
 import './Shop.css'
 import useProduct from '../../hooks/useProduct';
 import { Link } from 'react-router-dom';
-import { createContext } from 'react';
+// import { createContext } from 'react';
 
-export const RingContext = createContext('diamond')
+// export const RingContext = createContext('diamond')
 
 
 const Shop = () => {
@@ -47,7 +47,8 @@ const Shop = () => {
 
 
     return (
-        <RingContext.Provider value='alur ring'>
+        // <RingContext.Provider value='alur ring'></RingContext.Provider>
+        <div>
                 <div className='shopContainer'>
                 <div className='productContainer'>
                     {
@@ -68,7 +69,7 @@ const Shop = () => {
                     
                 </div>
             </div>
-        </RingContext.Provider>
+        </div>
     );
 };
 
